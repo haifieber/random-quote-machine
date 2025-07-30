@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="device-width, initial-scale=1.0">
+        <title>Random Quote Machine</title>
+
+        <!-- Bootstrap CDN -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        />
+        <!-- Tailwind CDN -->
+        <script src="https://cdn.tailwindcss.com"></script>
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+
+    </head>
+
+    <body class="flex flex-col items-center justify-center min-h-screen">
+        <!-- Quote Box Container -->
+        <div id="quote-box" class="bg-white text-center rounded p-5 shadow-lg max-w-md">
+            <!-- Text -->
+            <p id="text" class="text-lg font-semibold">Here Quote</p>
+            <p id="author" class="text-sm text-right text-gray-600">Here Author</p>
+            
+            <!-- Buttons -->
+            <div class="mt-4 flex justify-between">
+                <div class="flex gap-2">
+                    <a id="tweet-quote" class="btn text-white" href="https://twitter.com/intent/tweet" target="_blank">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a id="tumblr-quote" class="btn text-white" href="https://www.tumblr.com/" target="_blank">
+                        <i class="fab fa-tumblr"></i>
+                    </a> 
+                </div>
+                <button id="new-quote" class="btn ml-3 text-white">New Quote</button>
+            </div>
+        </div>
+        <!-- Footer -->
+        <p class="text-center text-white mt-3 text-sm">by P.W. and <a href="https://www.freecodecamp.org/" target="_blank" class="text-primary">freeCodeCamp</a></p>
+        
+        <!-- import JS -->
+        <script src="quotes.js"></script>
+        <script src="colors.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
